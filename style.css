@@ -1,0 +1,163 @@
+/* Reset default margin and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #d9d9d9;
+  color: #fff;
+}
+
+/* Styles for logo and text container */
+.logo-container {
+  display: flex;
+  align-items: center;
+  padding: 10px; /* Adjust padding around the content */
+}
+
+/* Styles for logo image */
+.logo-container img {
+  max-width: 70px; /* Adjust the maximum width of the logo */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Adjust margin between logo and text */
+}
+
+/* Styles for text container */
+.text-container {
+  color: #fff;
+}
+
+.tagline {
+  margin: 0; /* Remove default margin */
+  font-size: 18px; /* Adjust font size as needed */
+}
+
+.additional-line {
+  margin: 5px 0 0; /* Adjust top margin as needed */
+  font-size: 10px; /* Adjust font size as needed */
+}
+
+/* Styles for chat container */
+.fullscreen-background {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-container {
+  max-width: 500px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #451082; /* Dark blue background inside chatbot */
+  padding-bottom: 120px; /* Increase padding to extend container length */
+  margin-top: 140px; /* Add margin to create space above */
+}
+
+/* Styles for chat messages */
+.chat-box {
+  height: calc(100% - 130px);
+  padding: 10px;
+  overflow-y: auto;
+}
+
+
+.chat-msg {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Styles for chatbot avatar */
+.chat-msg.bot {
+  justify-content: flex-start;
+  order: 2; /* Set the order for chatbot messages */
+}
+
+
+
+/* Styles for user message */
+.chat-msg.user {
+  justify-content: flex-end; /* Align user messages to the right */
+  order: 1; /* Set the order for user messages */
+}
+
+/* Styles for user avatar */
+.chat-msg.user .avatar {
+  margin-left: 10px; /* Adjust margin between avatar and message */
+  max-width: 30px; /* Adjust maximum width of the user avatar */
+  height: 30px; /* Adjust height of the user avatar */
+  order: 2; /* Set the order for user avatar */
+}
+
+/* Styles for avatars */
+.chat-msg .avatar {
+  margin: 0 10px; /* Adjust margin between avatar and message */
+  max-width: 30px; /* Adjust maximum width of the avatar */
+  height: 30px; /* Adjust height of the avatar */
+}
+
+
+/* Styles for chatbot message */
+.chat-msg.bot .message {
+  background-color: #a6a6a6;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  align-self: flex-start;
+}
+/* Styles for user message */
+.chat-msg.user .message {
+  background-color: #a6a6a6;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  align-self: flex-start;
+}
+/* Styles for user input section */
+.user-input-container {
+  display: flex;
+  align-items: center;
+  margin-top: 60px; /* Adjust margin between chat container and user input */
+  position: absolute;
+  width: 30%;
+  margin-left: 20px;
+}
+
+.user-input {
+  width: calc(100% - 70px); /* Adjust width of user input */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin-right: 10px; /* Adjust margin between input and button */
+  font-size: 16px;
+  background-color: #fff;
+  color: #000;
+}
+
+.send-btn {
+  width: 60px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #a6a6a6;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.send-btn:hover {
+  background-color: #0056b3;
+}
+.chat-msg.user .message:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+.chat-msg.bot .message:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
